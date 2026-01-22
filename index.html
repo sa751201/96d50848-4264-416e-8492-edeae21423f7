@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Picker — 找出附近的熱門餐廳</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="fade-in">不知道要吃什麼？</h1>
+            <p class="subtitle fade-in">讓我們為您做決定。搜尋半徑 500 公尺內的熱門餐廳。</p>
+        </header>
+
+        <main>
+            <div id="roulette-container" class="roulette-container hidden">
+                <div id="roulette-text" class="roulette-text">正在尋找美味...</div>
+            </div>
+
+            <div id="result-card" class="result-card hidden">
+                <div class="result-image-container">
+                    <img id="restaurant-image" src="" alt="Restaurant">
+                </div>
+                <div class="result-details">
+                    <h2 id="restaurant-name">餐廳名稱</h2>
+                    <a id="restaurant-link" href="#" target="_blank" class="map-link">在 Google 地圖上查看</a>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="pick-btn" class="primary-button">幫我選一家</button>
+                <div id="status-message" class="status-message"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Lunch Picker. Powered by Google Places API.</p>
+        </footer>
+    </div>
+
+    <!-- The script is now loaded as a module for Vite -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
